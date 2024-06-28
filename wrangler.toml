@@ -12,10 +12,6 @@ TARGET_UPSTREAM = "https://registry-1.docker.io"
 
 [env.production]
 name = "cloudflare-docker-proxy"
-routes = [
-    { pattern = "docker.timemap.pro", custom_domain = true },
-]
-
 # routes = [
 #   { pattern = "docker.libcuda.so", custom_domain = true },
 #   { pattern = "quay.libcuda.so", custom_domain = true },
@@ -32,7 +28,7 @@ TARGET_UPSTREAM = ""
 
 [env.staging]
 name = "cloudflare-docker-proxy-staging"
-route = { pattern = "docker-staging.timemap.pro", custom_domain = true }
+#route = { pattern = "docker-staging.timemap.pro", custom_domain = true }
 
 [env.staging.vars]
 MODE = "staging"
